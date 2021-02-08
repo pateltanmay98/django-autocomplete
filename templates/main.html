@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Autocomplete</title>
+</head>
+<body>
+<h1>Autocomplete Demo</h1>
+<input list="autocomplete" placeholder="Search Color" />
+<datalist id="autocomplete">
+    <option><h3>Tanmay</h3><h6>Patel</h6></option>
+    {% for result in results %}
+    <option>{{result.cname}}</option>
+    {% endfor %}
+</datalist>
+</body>
+</html>
